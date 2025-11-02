@@ -1,5 +1,5 @@
 
-// import roomimg from "../assets/images/logo.svg";
+import headerlogo from "../assets/images/logo.svg";
 
 const Header = () => {
 
@@ -7,7 +7,7 @@ const Header = () => {
 
         <header className="header">
             <a href="/">
-                {/* <img className="site-header" src={roomimg} alt="Room logo" /> */}
+                <img className="site-header" src={headerlogo} alt="Room logo" />
             </a>
 
             <nav>
