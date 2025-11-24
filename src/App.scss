@@ -182,3 +182,57 @@
     }
   }
 }//end for stat
+
+//footer part
+.footer {
+  background: #232127;
+  color: white;
+  text-align: center;
+  padding-top: 4rem;
+
+  .cta {
+    background: #3b3054;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    button {
+      background: #2acfcf;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .footer-links {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 5rem;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        color: #bfbfbf;
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
