@@ -7,7 +7,8 @@ const ShortenLink = () => {
   
     // Simulate shortening
     const handleShorten = () => {
-      if (link.trim() === "") return alert("Please enter a link");
+      if (link.trim() === "") 
+      return alert("Please add a link");
   
       const fakeShort = "https://rel.link/" + Math.random().toString(36).substring(7);
       setShortLinks([...shortLinks, { original: link, short: fakeShort }]);
@@ -18,25 +19,19 @@ const ShortenLink = () => {
         <div className="shorten">
           {/* the Input Field */}
           <div className="shorten-box">
-            <input
-              type="text"
-              placeholder="Shorten a link here..."
-              value={link}
-              onChange={(e) => setLink(e.target.value)}
-            />
+            <input type="text" placeholder="Shorten a link here..." value={link} 
+            onChange={(e) => setLink(e.target.value)} />
             <button onClick={handleShorten}>Shorten It!</button>
           </div>
     
-          {/* for Display shortened links */}
+          {/* for Displaying shortened links paste insde the input*/}
           <div className="short-links">
             {shortLinks.map((item, index) => (
               <div className="link-card" key={index}>
                 <p className="original">{item.original}</p>
                 <div className="short-side">
                   <a href={item.short}>{item.short}</a>
-                  <button
-                    onClick={() => navigator.clipboard.writeText(item.short)}
-                  >
+                  <button onClick={() => navigator.clipboard.writeText(item.short)} >
                     Copy
                   </button>
                 </div>
