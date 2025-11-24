@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+//header style
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  padding: 1rem 8%;
+  background: #ce6666;
+  
+    //the site logo and the left navs
+  .spacing{
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    
+    //resizing the site logo
+    .logo {
+      a{
+        img.site-header{
+          width: 70px;
+          // background-color: #2acfcf;
+        }
+      }
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      color: hsl(257, 7%, 63%);
+    }
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  //the right side btn for login & signup
+  .auth button {
+    margin-left: 1rem;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &.login {
+      background: none;
+      color: hsl(257, 7%, 63%);
+    }
+
+    &.signup {
+      background: hsl(180, 66%, 49%);
+      color: white;
+    }
   }
-  to {
-    transform: rotate(360deg);
+}//header style
+
+//herosection style
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  // padding: 5rem 8%;
+  background: #ce5d5d;
+
+  .hero-content {
+    max-width: 30%;
+    padding: 3rem 8%;
+    height: 60vh;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: hsl(257, 7%, 63%);
+      margin-bottom: 2rem;
+    }
+    button {
+      background: hsl(180, 66%, 49%);
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
   }
-}
+
+  .hero-image img {
+    width: 500px;
+  }
+}//end of hero styling
+
+//for the shorten links
+.shorten {
+  background: #f0f1f6;
+  padding: 3rem 8%;
+  position: relative;
+  margin-top: 2rem;
+
+  .shorten-box {
+    background: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+
+    input {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      background: hsl(180, 66%, 49%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .link-card {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
+
+    .short-side {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      a {
+        color: hsl(180, 66%, 49%);
+      }
+
+      button {
+        background: hsl(180, 66%, 49%);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}//end of shorten link
+
+//for statistics
+.statistics {
+  background: #f0f1f6;
+  padding: 5rem 8%;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: left;
+      flex: 1;
+      h3 {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: #9e9aa7;
+      }
+    }
+  }
+}//end for stat

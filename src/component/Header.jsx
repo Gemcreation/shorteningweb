@@ -1,23 +1,33 @@
 
-import headerlogo from "../assets/images/logo.svg";
+import headerLogo from "../assets/images/logo.svg";
 
 const Header = () => {
 
     return(
 
         <header className="header">
-            <a href="/">
-                <img className="site-header" src={headerlogo} alt="Room logo" />
-            </a>
+            <div className="spacing">              
+                <div className="logo">
+                    <a href="/">
+                        <img src={headerLogo} className="site-header" alt="Room logo" />
+                    </a>
+                </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#shop">shop</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+                {/* Nav Links */}
+                <nav>
+                    <ul>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    </ul>
+                </nav>
+            </div>
+
+            {/* Nav Btn at the rght */}
+            <div className="auth">
+                <button className="login">Login</button>
+                <button className="signup">Sign Up</button>
+            </div>
         </header>
 
     )
