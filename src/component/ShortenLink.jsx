@@ -18,10 +18,12 @@ const ShortenLink = () => {
     return(
       <div className="shorten">
         {/* the Input Field */}
-        <div className="shorten-box">
-          <input type="text" placeholder="Shorten a link here..." value={link} 
-          onChange={(e) => setLink(e.target.value)} />
-          <button onClick={handleShorten}>Shorten It!</button>
+        <div className="toMargin">
+          <div className="shorten-box">
+            <input type="text" placeholder="Shorten a link here..." value={link} 
+            onChange={(e) => setLink(e.target.value)} />
+            <button onClick={handleShorten}>Shorten It!</button>
+          </div>
         </div>
     
         {/* for Displaying shortened links paste insde the input*/}
