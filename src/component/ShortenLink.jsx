@@ -30,10 +30,10 @@ const ShortenLink = () => {
           <div className="link-card" key={index}>
               <p className="original">{item.original}</p>
               <div className="short-side">
-                  <a href={item.short}>{item.short}</a>
-                  <button onClick={() => navigator.clipboard.writeText(item.short)} >
-                    Copy
-                  </button>
+                <a href={item.short}>{item.short}</a>
+                <button onClick={() => navigator.clipboard.writeText(item.short)} >
+                  Copy
+                </button>
               </div>
           </div>
           ))}
