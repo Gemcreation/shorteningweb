@@ -23,11 +23,18 @@
       }
     }
 
-    nav ul {
+    nav ul{
       display: flex;
       gap: 2rem;
       list-style: none;
+    }
+    nav ul a{
+      text-decoration: none;
       color: hsl(257, 7%, 63%);
+      transition: 0.7s ease;
+    }
+    a:hover{      
+      color: hsl(257, 27%, 26%);
     }
   }
 
@@ -39,6 +46,7 @@
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.8s ease;
 
     &.login {
       background: none;
@@ -48,6 +56,9 @@
     &.signup {
       background: hsl(180, 66%, 49%);
       color: white;
+    }
+    &:hover{
+      background-color: hsl(180, 35%, 48%);
     }
   }
 }//header style
@@ -81,6 +92,11 @@
       border: none;
       border-radius: 30px;
       cursor: pointer;
+      transition: 0.8s ease;
+
+      &:hover{
+        background-color: hsl(180, 35%, 48%);       
+      }
     }
   }
 
@@ -118,6 +134,11 @@
       border-radius: 10px;
       padding: 1rem 2rem;
       cursor: pointer;
+      transition: 0.8s ease;
+
+      &:hover{
+        background-color: hsl(180, 35%, 48%);
+      }
     }
   }
 

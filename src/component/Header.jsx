@@ -16,9 +16,9 @@ const Header = () => {
                 {/* Nav Links */}
                 <nav>
                     <ul>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Resources</li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
                     </ul>
                 </nav>
             </div>
