@@ -18,8 +18,10 @@ const Statistics = () => {
 
     return(
         <section className="statistics">
-          <h2>Advanced Statistics</h2>
-          <p>Track how your links are performing across the web with<br /> our advanced statistics dashboard.</p>
+          <div className="texts">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with<br /> our advanced statistics dashboard.</p>
+          </div>
     
           <div className="cards">
             {stats.map((stat, i) => (

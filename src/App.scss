@@ -73,6 +73,7 @@
   align-content: center;
   background: #ce5d5d;
   height: 85vh;
+  padding-bottom: 40px;
 
   .hero-content {
     max-width: 50%;
@@ -209,12 +210,18 @@
 //for statistics
 .statistics {
   background: #f0f1f6;
-  padding: 5rem 8%;
+  padding: 1rem 8%;
   text-align: center;
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  .texts{
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: hsl(257, 27%, 26%);
+    }
+    p{
+      color: hsl(257, 7%, 63%);
+    }
   }
 
   .cards {
@@ -231,9 +238,10 @@
       flex: 1;
       h3 {
         margin-bottom: 1rem;
+        color: hsl(257, 27%, 26%);
       }
       p {
-        color: #9e9aa7;
+        color: hsl(257, 7%, 63%);
       }
     }
   }
