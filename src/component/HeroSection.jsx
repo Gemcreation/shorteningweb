@@ -16,6 +16,7 @@ const HeroSection = () => {
           <div className="hero-image">
             <img src={heroImg} alt="Working Illustration" />
           </div>
+          {/* I dont later make use of this hero image because it's not working well for what i need to fo. So instead i use it as a backgroung image on and it works fine for me */}
         </section>
     );
 }

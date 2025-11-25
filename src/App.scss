@@ -68,29 +68,34 @@
 //herosection style
 .hero {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   align-content: center;
-  // padding: 5rem 8%;
   background: #ce5d5d;
+  height: 85vh;
 
   .hero-content {
-    max-width: 30%;
-    padding: 3rem 8%;
-    height: 60vh;
+    max-width: 50%;
+    padding: 0rem 8%;
+
     h1 {
-      font-size: 3rem;
+      font-size: 4.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      color: hsl(260, 8%, 14%);
+      line-height: 5rem;
     }
     p {
       color: hsl(257, 7%, 63%);
       margin-bottom: 2rem;
+      font-size: 1.3rem;
+      font-weight: 500;
     }
     button {
       background: hsl(180, 66%, 49%);
       color: #fff;
-      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
       border: none;
       border-radius: 30px;
       cursor: pointer;
@@ -103,7 +108,8 @@
   }
 
   .hero-image img {
-    width: 500px;
+    width: 600px;
+    padding: 3rem 0%;
   }
 }//end of hero styling
 
