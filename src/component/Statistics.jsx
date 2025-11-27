@@ -23,13 +23,28 @@ const Statistics = () => {
             <p>Track how your links are performing across the web with<br /> our advanced statistics dashboard.</p>
           </div>
     
-          <div className="cards">
+          {/* <div className="cards">
             {stats.map((stat, i) => (
               <div className="card" key={i}>
                 <h3>{stat.title}</h3>
                 <p>{stat.text}</p>
               </div>
             ))}
+          </div> */}
+          {/*  */}
+          <div className="cards">
+            <div className="card" >
+              <h3>Brand Recognition</h3>
+              <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+            <div className="card" >
+              <h3></h3>
+              <p></p>
+            </div>
+            <div className="card" >
+              <h3></h3>
+              <p></p>
+            </div>
           </div>
         </section>
     );
