@@ -212,7 +212,7 @@
   background: #f0f1f6;
   padding: 1rem 8%;
   text-align: center;
-  height: 100vh;
+  height: 80vh;
 
   .texts{
     h2 {
@@ -282,11 +282,16 @@
 .cta{
   background-color: hsl(257, 27%, 26%);
   background-image: url(assets/images/bg-boost-desktop.svg);
-  padding: 4rem 2rem;
-  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 2rem;
+  color: #fff;
+  // border-radius: 10px;
+  text-align: center;
+  align-items: center;
   h2 {
     margin-bottom: 1rem;
-    // font-size: 2rem;
+    font-size: 1.7rem;
   }
   button {
     background: hsl(180, 66%, 49%);
@@ -302,6 +307,7 @@
     }
   }
 }
+//end of cta
 
 //footer part
 .footer {
