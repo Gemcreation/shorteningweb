@@ -286,19 +286,26 @@
   padding-top: 4rem;
 
   .cta {
-    background: #3b3054;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(assets/images/bg-boost-desktop.svg);
     padding: 4rem 2rem;
     border-radius: 10px;
     h2 {
       margin-bottom: 1rem;
+      // font-size: 2rem;
     }
     button {
-      background: #2acfcf;
+      background: hsl(180, 66%, 49%);
+      color: #fff;
       border: none;
-      padding: 0.8rem 2rem;
-      border-radius: 30px;
-      color: white;
+      border-radius: 23px;
+      padding: 1rem 3rem;
       cursor: pointer;
+      transition: 0.8s ease;
+
+      &:hover{
+        background-color: hsl(180, 35%, 48%);
+      }
     }
   }
 
