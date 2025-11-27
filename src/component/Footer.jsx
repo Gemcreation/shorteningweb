@@ -4,11 +4,6 @@ const Footer = () => {
 
     return(
         <footer className="footer">
-          <div className="cta">
-            <h2>Boost your links today</h2>
-            <button>Get Started</button>
-          </div>
-    
           <div className="footer-links">
             <div className="brand">Shortly</div>
     
